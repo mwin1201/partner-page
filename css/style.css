@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.card {
+    flex: 0 0 30%;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px grey;
+    display: none;
+    flex-flow: column;
+
+}
+
+.show {
+    display: flex;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+
+.card a img {
+    display: block;
+    margin: auto;
+}
+
+h4, p {
+    margin: 5px;
+}
+
+img {
+    width: 150px;
+    height: 75px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
