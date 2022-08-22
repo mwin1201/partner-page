@@ -1,5 +1,5 @@
-const filterSelection = (choices) => {
-    console.log(choices);
+const filterSelection = () => {
+    const choices = [document.getElementById("partner_filter").value, document.getElementById("region_filter").value];
     var cards, card_index, choice_index;
     cards = document.getElementsByClassName("card");
     for (choice_index = 0; choice_index < choices.length; choice_index++) {
@@ -38,12 +38,12 @@ const addClass = (card, className) => {
     }
 };
 
-//var partner_filter = document.getElementById("type_filter");
+//var partner_filter = document.getElementById("partner_filter");
 //var region_filter = document.getElementById("region_filter");
-var filter_form = document.getElementById("filters");
+//var filter_form = document.getElementById("filters");
 //partner_filter.addEventListener("change", filterSelection([partner_filter.value, region_filter.value]));
 //region_filter.addEventListener("change", filterSelection([partner_filter.value,region_filter.value]));
-filter_form.addEventListener("submit", filterSelection(["technology","all"]));
+//filter_form.addEventListener("submit", filterSelection(["technology","all"]));
 
 // choices
 // variation 1: ["all", "all"]

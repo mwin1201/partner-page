@@ -22,7 +22,7 @@
         <form id="filters">
             <label for="type_filter">
                 Partner Type: 
-                <select name="type_filter" id="type_filter">
+                <select name="type_filter" id="partner_filter" onchange="filterSelection()">
                     <option value="all">All</option>
                     <option value="reseller">Reseller</option>
                     <option value="integration">Integration</option>
@@ -31,13 +31,12 @@
             </label>
             <label for="region_filter">
                 Partner Region: 
-                <select name="region_filter" id="region_filter">
+                <select name="region_filter" id="region_filter" onchange="filterSelection()">
                     <option value="all">All</option>
                     <option value="usa">USA</option>
                     <option value="canada">Canada</option>
                 </select>
             </label>
-            <button type="submit">Submit</button>
         </form>
     </div>
 
