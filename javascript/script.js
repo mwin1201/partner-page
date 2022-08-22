@@ -1,5 +1,5 @@
 const filterSelection = () => {
-    const choices = [document.getElementById("partner_filter").value, document.getElementById("region_filter").value];
+    const choices = [document.getElementById("type_filter").value, document.getElementById("region_filter").value];
     var cards, card_index, choice_index;
     cards = document.getElementsByClassName("card");
     for (choice_index = 0; choice_index < choices.length; choice_index++) {
